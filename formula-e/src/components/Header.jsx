@@ -10,29 +10,32 @@ const Header = () => {
                     <ul class="nav-menu">
                         <li><Link to ="/">HOME</Link></li>
                         <li><Link to ="/Times">TIMES</Link></li>
-                        <li><Link to =".//pages/corridas.html">CORRIDAS</Link></li>
-                        <li><Link to =".//pages/noticias.html">NOTÍCIAS</Link></li>
-                        <li><Link to =".//pages/jogo.html">JOGO</Link></li>
-                        <li><Link to =".//pages/loja.html">LOJA</Link></li>
-                        <li><Link to =".//pages/aovivo.html">AO VIVO</Link></li>
-                        <li><Link to =".//pages/contato.html">CONTATO</Link></li>
-                        <li><Link to =".//pages/login.html">LOGIN</Link></li>
+                        <li><Link to ="/Corridas">CORRIDAS</Link></li>
+                        <li><Link to ="/Noticias">NOTÍCIAS</Link></li>
+                        <li><Link to ="/Jogo">JOGO</Link></li>
+                        <li><Link to ="/Loja">LOJA</Link></li>
+                        <li><Link to ="/Live">AO VIVO</Link></li>
+                        <li><Link to ="/Contato">CONTATO</Link></li>
+                        <li><Link to ="/Login">LOGIN</Link></li>
                     </ul>
                 </nav>
             </div>
             <div class="nav-menu-mobile">
                 <button onclick="toggleMenu()">☰</button>
-                <div id="nav-menu-mobile-content" class="nav-menu-mobile-content">
-                   <Link to ="../index.html">HOME</Link>
-                   <Link to =".//pages/times.html">TIMES</Link>
-                   <Link to =".//pages/corridas.html">CORRIDAS</Link>
-                   <Link to =".//pages/noticias.html">NOTÍCIAS</Link>
-                   <Link to =".//pages/jogo.html">JOGO</Link>
-                   <Link to =".//pages/loja.html">LOJA</Link>
-                   <Link to =".//pages/aovivo.html">AO VIVO</Link>
-                   <Link to =".//pages/contato.html">CONTATO</Link>
-                   <Link to =".//pages/login.html">LOGIN</Link>
-                </div>
+
+{/*     ------------->>>>BOTEI ESSE MENU DENTRO DE UMA LISTA, PERGUNTAR PRO METHEUS SE PRECISA TIRAR<<<<-------------- */}
+
+                <ul id="nav-menu-mobile-content" class="nav-menu-mobile-content">
+                    <li><Link to ="/">HOME</Link></li>
+                    <li><Link to ="/Times">TIMES</Link></li>
+                    <li><Link to ="/Corridas">CORRIDAS</Link></li>
+                    <li><Link to ="/Noticias">NOTÍCIAS</Link></li>
+                    <li><Link to ="/Jogo">JOGO</Link></li>
+                    <li><Link to ="/Loja">LOJA</Link></li>
+                    <li><Link to ="/Live">AO VIVO</Link></li>
+                    <li><Link to ="/Contato">CONTATO</Link></li>
+                    <li><Link to ="/Login">LOGIN</Link></li>
+                </ul>
             </div>
         </header>
 
