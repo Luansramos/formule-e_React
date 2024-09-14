@@ -1,16 +1,16 @@
-import React from 'react';
-import Header from './assets/components/header';
+import { Outlet } from "react-router-dom"
+import Header from './components/Header'
+
 
 function App() {
+
   return (
-    <div>
+    <>
       <Header/>
-      <main>
-        <h2>Conteúdo Principal</h2>
-        <p>Bem-vindo à minha aplicação!</p>
-      </main>
-    </div>
-  );
+      <Outlet/>
+    </>
+  )
 }
 
-export default App;
+export default App
+
