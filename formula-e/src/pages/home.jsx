@@ -315,15 +315,15 @@ const Videos = () => {
         <h2>VÍDEOS EM DESTAQUE</h2>
         <div className="container-videos-destaque">
           <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wFgGID0RwVU?si=NWTgydU7OmMAsh1X" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wFgGID0RwVU?si=NWTgydU7OmMAsh1X" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>MELHORES MOMENTOS</p>
           </div>
           <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/unI-Id9QQ7o?si=k-eY5cDXT1DiMk6i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/unI-Id9QQ7o?si=k-eY5cDXT1DiMk6i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>VÍDEO POV</p>
           </div>
           <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lIBpuL--6To?si=JnLRvyPrrpSNtxs_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lIBpuL--6To?si=JnLRvyPrrpSNtxs_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>VÍDEO DE APRESENTAÇÃO</p>
           </div>
         </div>
@@ -336,7 +336,7 @@ const Jogo = () => {
         <section className="jogo rolagem">
         <h2>ÁREA GAMIFICADA</h2>
         <div className="container-imgjogo">
-          <a href=".//pages/jogo.html"><img class="imgjogo" width="300" height="400" src=".//img/fotojogo.png" alt="jogo"/>
+          <a href=".//pages/jogo.html"><img className="imgjogo" width="300" height="400" src=".//img/fotojogo.png" alt="jogo"/>
           </a>
         </div>
       </section>
