@@ -1,4 +1,4 @@
-.menu {
+/* .menu {
     display: flex;
     flex-wrap: wrap;
     background: linear-gradient(to right, #000000 50%, #2149d9 100%);
@@ -35,7 +35,7 @@
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .nav-menu-mobile-content {
@@ -101,6 +101,115 @@
     display: inline-block;
     padding: 16px 0px;
     position: relative;
+<<<<<<< HEAD
+} */
+
+/* Estilos do header e menu */
+
+
+.header-container {
+  width: 100%;
+  background: linear-gradient(to right, #000000 50%, #2149d9 100%);
+  padding: 10px;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* Estilos para o menu mobile */
+.nav-menu-mobile {
+  display: none;
+  position: relative;
+}
+
+.nav-menu-mobile button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.nav-menu-mobile-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 999;
+  padding: 10px;
+}
+
+.nav-menu-mobile-content a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  font-size: 16px;
+}
+
+.nav-menu-mobile-content a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.nav-menu-mobile-content.active {
+  display: flex;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+
+  .nav-menu-mobile {
+      display: block;
+  }
+
+  .nav-menu-mobile-content {
+      display: none;
+  }
+
+  .nav-menu-mobile-content.active {
+      display: flex;
+      flex-direction: column;
+  }
 }
 
 
@@ -168,5 +277,4 @@
       display: none;
     }
   }
-  
   

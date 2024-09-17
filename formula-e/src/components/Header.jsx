@@ -21,7 +21,7 @@ const Header = () => {
                 </nav>
             </div>
             <div className="nav-menu-mobile">
-                <button onclick="toggleMenu()">☰</button>
+                <button onClick="toggleMenu()">☰</button>
 
 {/*     ------------->>>>BOTEI ESSE MENU DENTRO DE UMA LISTA, PERGUNTAR PRO METHEUS SE PRECISA TIRAR<<<<-------------- */}
 
