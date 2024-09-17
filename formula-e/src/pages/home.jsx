@@ -1,5 +1,7 @@
 
 import "./Home.css";
+import "../js/script"
+import { Link } from 'react-router-dom';
 
 const Iamgens = () => {
     return(
@@ -15,7 +17,7 @@ const Iamgens = () => {
         Prepare-se para uma experiência única, onde cada curva, cada ultrapassagem e cada momento nos leva mais perto de um amanhã melhor. Não perca a oportunidade de fazer parte dessa revolução. Siga em frente e descubra por que a Fórmula E está mudando o jogo das corridas automobilísticas para sempre.
         O futuro está aqui. O futuro é elétrico. O futuro é Fórmula E.</p>
       <div className="saiba">
-        <a href=".//pages/saibamais.html"><button>Saiba Mais</button></a>
+        <Link to ="SaibaMais"><button>Saiba Mais</button></Link>
       </div>
     </div>
   </section>
@@ -76,7 +78,7 @@ const SectionCalendario = () => {
           </ul>
         </div>
         <div className="saiba">
-          <a href=".//pages/corridas.html"><button>Saiba Mais</button></a>
+        <Link to ="Corridas"><button>Saiba Mais</button></Link>
         </div>
       </div>
     </section>

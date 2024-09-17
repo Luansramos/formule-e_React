@@ -12,6 +12,7 @@ import Loja from './pages/Loja.jsx'
 import Live from './pages/Aovivo.jsx'
 import Contato from './pages/Contato.jsx'
 import Login from './pages/Login.jsx'
+import SaibaMais from './pages/SaibaMais.jsx'
 
 
 
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       {path:'Live',element:<Live/>},
       {path:'Contato',element:<Contato/>},
       {path:'Login',element:<Login/>},
+      {path:'SaibaMais', element:<SaibaMais/>}
     ]
   }
 
