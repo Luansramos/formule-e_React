@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <div class="header-container">
-                <nav class="menu">
-                    <ul class="nav-menu">
+            <div className="header-container">
+                <nav className="menu">
+                    <ul className="nav-menu">
                         <li><Link to ="/">HOME</Link></li>
                         <li><Link to ="/Times">TIMES</Link></li>
                         <li><Link to ="/Corridas">CORRIDAS</Link></li>
@@ -20,12 +20,12 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-            <div class="nav-menu-mobile">
-                <button onclick="toggleMenu()">☰</button>
+            <div className="nav-menu-mobile">
+                <button onClick="toggleMenu()">☰</button>
 
 {/*     ------------->>>>BOTEI ESSE MENU DENTRO DE UMA LISTA, PERGUNTAR PRO METHEUS SE PRECISA TIRAR<<<<-------------- */}
 
-                <ul id="nav-menu-mobile-content" class="nav-menu-mobile-content">
+                <ul id="nav-menu-mobile-content" className="nav-menu-mobile-content">
                     <li><Link to ="/">HOME</Link></li>
                     <li><Link to ="/Times">TIMES</Link></li>
                     <li><Link to ="/Corridas">CORRIDAS</Link></li>
