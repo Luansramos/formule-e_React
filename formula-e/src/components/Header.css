@@ -101,6 +101,7 @@
     display: inline-block;
     padding: 16px 0px;
     position: relative;
+<<<<<<< HEAD
 } */
 
 /* Estilos do header e menu */
@@ -210,3 +211,74 @@
       flex-direction: column;
   }
 }
+=======
+}
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-menu-mobile {
+      display: flex;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-redes img {
+      width: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-menu-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-menu-mobile button {
+      font-size: 24px;
+      background: transparent;
+      border: none;
+    }
+  
+    .nav-menu-mobile-content {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav-menu-mobile-content.active {
+      display: flex;
+    }
+  
+    .nav-menu-mobile button {
+      font-size: 18px;
+    }
+  
+    .nav-menu-mobile-content a {
+      font-size: 16px;
+    }
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .footer-informacoes {
+      display: none;
+    }
+  }
+  
+  
+>>>>>>> ea2de0b69d7223a588c32fb0d65b033e5eed7215
