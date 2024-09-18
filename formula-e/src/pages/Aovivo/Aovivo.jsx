@@ -5,7 +5,7 @@ function Live(){
         
     <main className="rolagem">
       <div className="container">
-        <h1>Transmissão Ao Vivo</h1>
+        <h1 className="h1">Transmissão Ao Vivo</h1>
         <div id="live-stream" className="live-stream">
           <iframe 
             id="live-video" 
@@ -17,7 +17,7 @@ function Live(){
             allowFullScreen
           ></iframe>
         </div>
-        <h2>Outras Corridas/Outros Vídeos</h2>
+        <h2 className="h2">Outras Corridas/Outros Vídeos</h2>
         <div id="videos" className="video-list">
           <div className="video">
             <iframe 
