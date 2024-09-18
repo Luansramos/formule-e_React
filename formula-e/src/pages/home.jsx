@@ -1,5 +1,5 @@
 
-import "./Home.css";
+import "../styles/Home.css";
 import "../js/script"
 import { Link } from 'react-router-dom';
 
