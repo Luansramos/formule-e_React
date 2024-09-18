@@ -21,7 +21,7 @@ const OqueE = () => {
 
 const Calendario = () => {
     return(
-        <section className="calendario"> 
+        <section className="calendario2"> 
       <h2>Calendário de Corridas e circuitos</h2>
       <p>A fórmula E tem um calendário de corridas que acontecem em diferentes cidades ao redor do mundo. Você pode encontrar mais informações sobre o nosso calendário atual na nossa página <a href="Corridas">CORRIDAS</a></p>
     </section>
