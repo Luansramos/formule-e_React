@@ -1,6 +1,6 @@
 
-import "../styles/Home.css";
-import "../js/script"
+import "./Home.css";
+import "../../js/script"
 import { Link } from 'react-router-dom';
 
 const Iamgens = () => {

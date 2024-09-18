@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/times.css'
+import './times.css'
 
 function Times() {
   return (

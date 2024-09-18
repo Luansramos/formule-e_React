@@ -1,4 +1,4 @@
-import "../styles/SaibaMais.css"
+import "./SaibaMais.css"
 
 
 const Titulo = () => {

@@ -1,4 +1,4 @@
-import '../styles/corridas.css'
+import './corridas.css'
 
  function Corridas(){
     return(

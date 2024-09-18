@@ -112,7 +112,7 @@
     font-size: 20px;
 }
 
-.saiba-mais button {
+/* .saiba-mais button {
     width: 120px;
     height: 30px;
     margin-bottom: 10px;
@@ -121,7 +121,7 @@
     border-radius: 10px;
     font-size: 18px;
     background: linear-gradient(to right, #708090 50%, #ffffff 100%);
-}
+} */
 
 .card {
     display: flex;
