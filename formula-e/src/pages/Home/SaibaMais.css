@@ -27,7 +27,7 @@ img {
 .titulo {
   display: flex;
   justify-content: center;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 100px;
 }
 

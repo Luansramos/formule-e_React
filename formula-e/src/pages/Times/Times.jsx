@@ -10,7 +10,7 @@ function Times() {
           <div className="card">
             <div className="content">
               <div className="imgBx">
-                <img src="../img/abt-cupra.png" alt="ABT Cupra" />
+                <img src=".//src/assets/abt-cupra.png" alt="ABT Cupra" />
               </div>
               <div className="contentBx">
                 <h3>ABT CUPRA FORMULA E TEAM</h3>
@@ -39,7 +39,7 @@ function Times() {
           <div className="card">
             <div className="content">
               <div className="imgBx">
-                <img src="../img/andreti.png" alt="Andretti" />
+                <img src=".//src/assets/andreti.png" alt="Andretti" />
               </div>
               <div className="contentBx">
                 <h3>ANDRETTI FORMULA E</h3>
@@ -68,7 +68,7 @@ function Times() {
           <div className="card">
             <div className="content">
               <div className="imgBx">
-                <img src="../img/DS PENSKE.png" alt="DS PENSKE" />
+                <img src=".//src/assets/DS PENSKE.png" alt="DS PENSKE" />
               </div>
               <div className="contentBx">
                 <h3>DS PENSKE</h3>
@@ -100,7 +100,7 @@ function Times() {
           <div className="card">
             <div className="content">
               <div className="imgBx">
-                <img src="../img/porsche.png" alt="Porsche" />
+                <img src=".//src/assets/porsche.png" alt="Porsche" />
               </div>
               <div className="contentBx">
                 <h3>TAG HEUER PORSCHE FORMULA E TEAM</h3>

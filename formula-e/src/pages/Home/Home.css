@@ -439,7 +439,7 @@ td {
   height: 500px;
   width: 900px;
 }
-/* 
+
 .footer-bg {
   background: linear-gradient(to left, #708090 50%, #ffffff 100%);
 }
@@ -498,7 +498,7 @@ div.footer-contato img {
   margin-top: 40px;
   display: flex;
   justify-content: center;
-} */
+}
 
 /* Responsividade para tablets e celulares */
 @media (max-width: 768px) {
@@ -525,8 +525,7 @@ div.footer-contato img {
   .containaer-principais-noticias {
     grid-template-columns: 1fr;
   }
-}
-/* 
+
   .footer {
     flex-direction: column;
     text-align: center;
@@ -628,4 +627,4 @@ div.footer-contato img {
   .terceiro {
     order: 3;
   }
-} */
+}

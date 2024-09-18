@@ -8,8 +8,8 @@ const Iamgens = () => {
     <section className="rolagem">
     <div className="noticia-container">
       <div className="container-imagem">
-        <img src=".//img/carro mahindra.jpg" alt="Carro mahindra" className="imagem1" />
-        <img src=".//img/carro mahindra2.webp" alt="Carro mahindra2" className="imagem2" />
+        <img src=".//src/assets/carro mahindra.jpg" alt="Carro mahindra" className="imagem1" />
+        <img src=".//src/assets/carro mahindra2.webp" alt="Carro mahindra2" className="imagem2" />
       </div>
       <h2>Descubra o Futuro das Corridas Automobilísticas: Bem-vindo à Fórmula E!</h2>
       <p>Você já imaginou um mundo onde a velocidade e a sustentabilidade se encontram na pista de corrida? Bem-vindo à Fórmula E, o ápice da inovação no mundo automobilístico. Aqui, a adrenalina das corridas de carros se une à tecnologia de ponta e ao compromisso com um futuro mais limpo e sustentável.
@@ -32,23 +32,23 @@ const SectionCalendario = () => {
         <div className="calendario">
           <ul className="calendario-list">
             <li>
-              <img src=".//img/china.png" alt="china"/>
+              <img src=".//src/assets/china.png" alt="china"/>
               <p>Rodada 13. 26 de maio de 2024</p>
             </li>
             <li>
-              <img src="./img/EUA.png" alt="Eua"/>
+              <img src=".//src/assets/EUA.png" alt="Eua"/>
               <p>Rodada 14. 29 de junho de 2024</p>
             </li>
             <li>
-              <img src=".//img/EUA.png" alt="EUa"/>
+              <img src=".//src/assets/EUA.png" alt="EUa"/>
               <p>Rodada 15. 30 de junho de 2024</p>
             </li>
             <li>
-              <img src=".//img/reino.webp" alt="Reino Unido"/>
+              <img src=".//src/assets/reino.webp" alt="Reino Unido"/>
               <p>Rodada 16. 20 de julho de 2024</p>
             </li>
             <li>
-              <img src=".//img/reino.webp" alt="Reino Unido"/>
+              <img src=".//src/assets/reino.webp" alt="Reino Unido"/>
               <p>Rodada 17. 21 de julho de 2024</p>
             </li>
           </ul>
@@ -56,23 +56,23 @@ const SectionCalendario = () => {
         <div className="container-pistas">
           <ul className="calendario-list">
             <li>
-              <img src=".//img/pistaXangai.png" alt="pista xangai"/>
+              <img src=".//src/assets/pistaXangai.png" alt="pista xangai"/>
               <p>CIRCUITO XANGAI.</p>
             </li>
             <li>
-              <img src=".//img/euapista.png" alt="Pista EUA"/>
+              <img src=".//src/assets/euapista.png" alt="Pista EUA"/>
               <p>CIRCUITO PORTLAND.</p>
             </li>
             <li>
-              <img src=".//img/euapista.png" alt="Pista EUA"/>
+              <img src=".//src/assets/euapista.png" alt="Pista EUA"/>
               <p>CIRCUITO PORTLAND.</p>
             </li>
             <li>
-              <img src=".//img/londrespista.png" alt="Pista Londres"/>
+              <img src=".//src/assets/londrespista.png" alt="Pista Londres"/>
               <p>CIRCUITO LONDRES.</p>
             </li>
             <li>
-              <img src=".//img/londrespista.png" alt="Pista Londres"/>
+              <img src=".//src/assets/londrespista.png" alt="Pista Londres"/>
               <p>CIRCUITO LONDRES.</p>
             </li>
           </ul>
@@ -92,19 +92,19 @@ const SectionNoticias = () => {
       <div className="containaer-principais-noticias">
         <div className="primeira-noticia">
           <a href="">
-            <img src=".//img/noticia 1.webp" alt="Imagem alemanha"/>
+            <img src=".//src/assets/noticia 1.webp" alt="Imagem alemanha"/>
           </a>
           <p>WEHRLEIN VENCE CORRIDA 2 EM MISANO APÓS ROWLAND FICAR SEM BATERIA</p>
         </div>
         <div className="segunda-noticia">
           <a href="">
-            <img src=".//img/noticia 2.webp" alt="Imagem Jogos"/>
+            <img src=".//src/assets/noticia 2.webp" alt="Imagem Jogos"/>
           </a>
           <p>Fórmula E: Confira horários e como assistir ao ePrix de Mônaco</p>
         </div>
         <div className="terceira-noticia">
           <a href="">
-            <img src=".//img/noticia3.webp" alt=""/>
+            <img src=".//src/assets/noticia3.webp" alt=""/>
           </a>
           <p>F-E: Equipe de Di Grassi, Abt usará trem de força Lola / Yamaha a partir de 2025</p>
         </div>
@@ -119,7 +119,7 @@ const Podio = () => {
         <h2>Destaque da última corrida</h2>
         <div className="podio">
           <div className="primeiro colocado">
-            <img src=".//img/pascal.png" alt=""/>
+            <img src=".//src/assets/pascal.png" alt=""/>
             <h3>2° Colocado:</h3>
             <h4>Pascal Wehrlein</h4>
             <p>Pontos:124</p>
@@ -127,7 +127,7 @@ const Podio = () => {
             <p> Equipe: TAG Heuer Porsche </p>
           </div>
           <div className=" segundo colocado">
-            <img src=".//img/pilotos/nick-jaguar.png" alt=""/>
+            <img src=".//src/assets/pilotos/nick-jaguar.png" alt=""/>
             <h3>1° Colocado:</h3>
             <h4>Nick Cassidy</h4>
             <p> Pontos: 140</p>
@@ -135,7 +135,7 @@ const Podio = () => {
             <p>EQUIPE: Jaguar TCS Racing</p>
           </div>
           <div className="terceiro colocado">
-            <img src=".//img/pilotos/oliver-nissan.png" alt=""/>
+            <img src="..//src/assets/pilotos/oliver-nissan.png" alt=""/>
             <h3>3° Colocado:</h3>
             <h4>Oliver Rowland</h4>
             <p>Pontos:118</p>
@@ -338,7 +338,7 @@ const Jogo = () => {
         <section className="jogo rolagem">
         <h2>ÁREA GAMIFICADA</h2>
         <div className="container-imgjogo">
-          <a href=".//pages/jogo.html"><img className="imgjogo" width="300" height="400" src=".//img/fotojogo.png" alt="jogo"/>
+          <a href=".//pages/jogo.html"><img className="imgjogo" width="300" height="400" src=".//src/assets/fotojogo.png" alt="jogo"/>
           </a>
         </div>
       </section>
