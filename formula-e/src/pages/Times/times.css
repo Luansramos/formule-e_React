@@ -9,7 +9,7 @@ header a {
     border-radius: 5px;
   }
   
-  /* .rolagem {
+  .rolagem {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
@@ -21,7 +21,7 @@ header a {
     filter: blur(0);
     transform: translateX(0);
     transition: all 2s;
-  } */
+  }
   
   .menu {
     display: flex;

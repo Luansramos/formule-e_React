@@ -1,10 +1,30 @@
+import React, { useEffect } from "react";
 import './corridas.css'
 
  function Corridas(){
-    return(
-        
+  useEffect(() => {
+  
+    const myObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    });
 
-    <section>
+  
+    const elements = document.querySelectorAll(".rolagem");
+    elements.forEach((element) => myObserver.observe(element));
+
+    return () => {
+        elements.forEach((element) => myObserver.unobserve(element));
+    };
+}, []); 
+    return(
+
+    <section className="rolagem">
       <div className="corpo">
         <h1>CALENDÁRIO 2024</h1>
         <div className="events">

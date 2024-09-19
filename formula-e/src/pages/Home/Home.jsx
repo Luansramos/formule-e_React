@@ -1,10 +1,34 @@
-
+import React, { useEffect } from "react";
 import "./Home.css";
-import "../../js/script"
 import { Link } from 'react-router-dom';
 
-const Iamgens = () => {
-    return(
+// Seu código do componente
+
+
+function Home() {
+  useEffect(() => {
+  
+    const myObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    });
+
+  
+    const elements = document.querySelectorAll(".rolagem");
+    elements.forEach((element) => myObserver.observe(element));
+
+    return () => {
+        elements.forEach((element) => myObserver.unobserve(element));
+    };
+}, []); 
+
+  return (
+    <>
     <section className="rolagem">
     <div className="noticia-container">
       <div className="container-imagem">
@@ -21,11 +45,6 @@ const Iamgens = () => {
       </div>
     </div>
   </section>
-  );
-};
-
-const SectionCalendario = () => {
-    return (
       <section className="calendario-pistas rolagem">
       <h2>PRÓXIMAS CORRIDAS</h2>
       <div className="calendario-container">
@@ -82,11 +101,7 @@ const SectionCalendario = () => {
         </div>
       </div>
     </section>
-    );
-  };
 
-const SectionNoticias = () => {
-  return (
     <section className="principais-noticias rolagem">
       <h2>PRINCIPAIS NOTÍCIAS</h2>
       <div className="containaer-principais-noticias">
@@ -110,11 +125,7 @@ const SectionNoticias = () => {
         </div>
       </div>
     </section>
-  );
-};
 
-const Podio = () => { 
-    return(
         <section className="container-podio rolagem">
         <h2>Destaque da última corrida</h2>
         <div className="podio">
@@ -144,11 +155,7 @@ const Podio = () => {
           </div>
         </div>
       </section>
-      );
-};
 
-const SectionClassificacao = () => {
-  return (
     <section className="container-classificacao rolagem">
       <h2>CLASSIFICAÇÃO</h2>
       <div className="table-container">
@@ -222,7 +229,6 @@ const SectionClassificacao = () => {
               <td> NEOM MCLAREN FORMULA E TEAM</td>
               <td>38</td>
             </tr>
-            <button id="mostrar-mais">Monstrar Mais</button>
             <tr>
               <td>11</td>
               <td><a href=".//pages/nissan.html">Sacha Fenestraz</a></td>
@@ -303,38 +309,28 @@ const SectionClassificacao = () => {
             </tr>
             <tr/>
           </tbody>
-        </table>
-        <button id="mostrar-menos">Mostrar Menos</button>
+        </table> 
       </div>
     </section>
-  );
-};
 
-
-const Videos = () => {
-    return(
         <section className="container-videos rolagem">
         <h2>VÍDEOS EM DESTAQUE</h2>
         <div className="container-videos-destaque">
           <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wFgGID0RwVU?si=NWTgydU7OmMAsh1X" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wFgGID0RwVU?si=NWTgydU7OmMAsh1X" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <p>MELHORES MOMENTOS</p>
           </div>
           <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/unI-Id9QQ7o?si=k-eY5cDXT1DiMk6i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/unI-Id9QQ7o?si=k-eY5cDXT1DiMk6i" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <p>VÍDEO POV</p>
           </div>
           <div className="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lIBpuL--6To?si=JnLRvyPrrpSNtxs_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lIBpuL--6To?si=JnLRvyPrrpSNtxs_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <p>VÍDEO DE APRESENTAÇÃO</p>
           </div>
         </div>
       </section>
-  );
-};
- 
-const Jogo = () => {
-    return(
+
         <section className="jogo rolagem">
         <h2>ÁREA GAMIFICADA</h2>
         <div className="container-imgjogo">
@@ -342,21 +338,8 @@ const Jogo = () => {
           </a>
         </div>
       </section>
-    );
-};
-
-const MainPage = () => {
-  return (
-    <div>
-        <Iamgens/>
-      <SectionCalendario />
-      <SectionNoticias />
-      <Podio/>
-      <SectionClassificacao />
-      <Videos/>
-      <Jogo/>
-    </div>
+      </>
   );
 };
 
-export default MainPage;
+export default Home;

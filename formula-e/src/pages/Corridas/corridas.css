@@ -5,6 +5,21 @@ img {
     display: flex;
     border-radius: 5px;
 }
+
+.rolagem {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+  
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+  }
+  
 .corpo {
     text-align: center;
 }
