@@ -2,7 +2,16 @@ import React from 'react';
 import '../components/Header.css'
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+function Header () {
+        // Função para alternar o menu móvel
+        const toggleMenu = () => {
+            const menuContent = document.getElementById("nav-menu-mobile-content");
+            if (menuContent.style.display === "flex") {
+                menuContent.style.display = "none";
+            } else {
+                menuContent.style.display = "flex";
+            }
+        };
     return (
         <header>
             <div className="header-container">
@@ -22,7 +31,7 @@ const Header = () => {
                 </nav>
             </div>
             <div className="nav-menu-mobile">
-                <button onClick="toggleMenu()">☰</button>
+                <button onClick={toggleMenu}>☰</button>
 
 {/*     ------------->>>>BOTEI ESSE MENU DENTRO DE UMA LISTA, PERGUNTAR PRO METHEUS SE PRECISA TIRAR<<<<-------------- */}
 

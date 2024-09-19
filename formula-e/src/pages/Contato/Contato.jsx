@@ -1,17 +1,41 @@
-import "./Contato.css"
+import React, { useEffect } from "react";
+import "./Contato.css";
 
 function Contato() {
-    function clicarBotao() {
-        // Lógica ao clicar no botão, se necessário
-        console.log("Botão Enviar Mensagem clicado");
-    };
-    return (
+    
+    useEffect(() => {
 
+        const myObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        });
+
+        const elements = document.querySelectorAll(".rolagem");
+        elements.forEach((element) => myObserver.observe(element));
+
+        return () => {
+            elements.forEach((element) => myObserver.unobserve(element));
+        };
+    }, []); 
+
+    // Função que será executada ao clicar no botão "Enviar Mensagem"
+    const clicarbotao = (event) => {
+        event.preventDefault();
+        alert("Mensagem enviada com sucesso!");
+    };
+
+    return (
         <main className="rolagem">
+           
             <div className="titulo-bg">
                 <div className="titulo container">
-                    <p className="font-2-l-b cor-0">Respostas em até 24h</p>
-                    <h1 className="font-1-xxl cor-0">
+                    <p className="font-2-l-b cor-12">Respostas em até 24h</p>
+                    <h1 className="font-1-xxl cor-12">
                         Nosso contato<span className="cor-p1">.</span>
                     </h1>
                 </div>
@@ -52,7 +76,7 @@ function Contato() {
                         <button
                             id="botaoenviar"
                             type="button"
-                            onClick={clicarBotao}
+                            onClick={clicarbotao}
                             className="botao col-2 botaoEnviar">
                             Enviar Mensagem
                         </button>
@@ -61,7 +85,7 @@ function Contato() {
             </div>
         </main>
     );
-};
+}
 
 export default Contato;
 // Modificações:
