@@ -1,39 +1,59 @@
-// import React from 'react';
-// import './times.css'
+import React, { useEffect } from "react";
+import './times.css'
 
-// function Times() {
-//   return (
-//     <main className="rolagem">
-//       <section className="container-times">
-//         <div className="container">
-//           {/* Card 1 */}
-//           <div className="card">
-//             <div className="content">
-//               <div className="imgBx">
-//                 <img src=".//src/assets/abt-cupra.png" alt="ABT Cupra" />
-//               </div>
-//               <div className="contentBx">
-//                 <h3>ABT CUPRA FORMULA E TEAM</h3>
-//                 <br />
-//               </div>
-//             </div>
-//             <ul className="sci">
-//               <li>
-//                 <p>Vitórias<br />14</p>
-//               </li>
-//               <li>
-//                 <p>Pódios<br />47</p>
-//               </li>
-//               <li>
-//                 <p>Corridas<br />109</p>
-//                 <div className="saiba-mais">
-//                   <a href="../pages/abt.html">
-//                     <button>Saiba Mais</button>
-//                   </a>
-//                 </div>
-//               </li>
-//             </ul>
-//           </div>
+function Times() {
+  useEffect(() => {
+  
+    const myObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    });
+
+  
+    const elements = document.querySelectorAll(".rolagem");
+    elements.forEach((element) => myObserver.observe(element));
+
+    return () => {
+        elements.forEach((element) => myObserver.unobserve(element));
+    };
+}, []); 
+  return (
+    <main className="rolagem">
+      <section className="container-times">
+        <div className="container">
+          {/* Card 1 */}
+          <div className="card">
+            <div className="content">
+              <div className="imgBx">
+                <img src=".//src/assets/abt-cupra.png" alt="ABT Cupra" />
+              </div>
+              <div className="contentBx">
+                <h3>ABT CUPRA FORMULA E TEAM</h3>
+                <br />
+              </div>
+            </div>
+            <ul className="sci">
+              <li>
+                <p>Vitórias<br />14</p>
+              </li>
+              <li>
+                <p>Pódios<br />47</p>
+              </li>
+              <li>
+                <p>Corridas<br />109</p>
+                <div className="saiba-mais">
+                  <a href="../pages/abt.html">
+                    <button>Saiba Mais</button>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
 
 //           {/* Card 2 */}
 //           <div className="card">
