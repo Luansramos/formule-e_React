@@ -1,9 +1,9 @@
 
-
 header a {
   text-decoration: none;
   color: white;
 }
+
 img {
   max-width: 100%;
   height: 100px;
@@ -11,7 +11,7 @@ img {
   border-radius: 5px;
 }
 
-/* .rolagem {
+.rolagem {
   opacity: 0;
   filter: blur(15px);
   transform: translateX(-100%);
@@ -23,7 +23,7 @@ img {
   filter: blur(0);
   transform: translateX(0);
   transition: all 2s;
-} */
+}
 
 .menu {
   display: flex;
@@ -208,6 +208,7 @@ img {
   color: #000000;
   font-size: 20px;
 }
+
 .saiba-mais button {
   width: 120px;
   height: 30px;
@@ -224,7 +225,8 @@ img {
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  overflow: hidden; /* Adicionei esta linha */
+  overflow: hidden;
+  /* Adicionei esta linha */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
@@ -235,8 +237,10 @@ img {
 
 .card-content {
   padding: 16px;
-  position: relative; /* Certifique-se de que está definido */
-  z-index: 1; /* Garanta que o conteúdo está acima de qualquer outro elemento de fundo */
+  position: relative;
+  /* Certifique-se de que está definido */
+  z-index: 1;
+  /* Garanta que o conteúdo está acima de qualquer outro elemento de fundo */
 }
 
 .card-image {
@@ -296,9 +300,11 @@ div.footer-contato img {
   display: flex;
   gap: 32px;
 }
+
 .footer a:hover {
   color: #ffff;
 }
+
 .footer-copy {
   grid-column: 1/-1;
   margin-top: 40px;
@@ -342,6 +348,7 @@ div.footer-contato img {
     text-align: center;
     padding: 10px;
   }
+
   .footer-informacoes {
     display: none;
   }
