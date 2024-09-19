@@ -64,3 +64,8 @@ function Contato() {
 };
 
 export default Contato;
+// Modificações:
+// Atributos HTML adaptados para React: for foi substituído por htmlFor e onclick por onClick.
+// Ação do formulário: O action="./contato.html" foi alterado para action="/contato", mas você pode ajustá-lo conforme a necessidade de sua aplicação.
+// Função de clique no botão: Criei a função clicarBotao para ser acionada ao clicar no botão "Enviar Mensagem".
+// Remoção do atributo button inline: O onclick="(clicarboatao())" foi substituído por onClick={clicarBotao} dentro do botão.
