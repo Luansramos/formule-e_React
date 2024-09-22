@@ -5,6 +5,20 @@ img {
     border-radius: 5px;
   }
   
+  .rolagem {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+  
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+  }
+
   .store {
     padding: 20px;
   }
@@ -101,10 +115,10 @@ img {
   
   .slider {
     position: relative;
-    width: 100%; /* Certifique-se que o slider ocupe a largura total */
-    max-width: 800px; /* Limite máximo para desktop */
-    margin: 20px auto; /* Centralizar no meio */
-    overflow: hidden; /* Ocultar o excesso */
+    width: 100%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    overflow: hidden; 
     border-radius: 10px;
   }
   
@@ -121,7 +135,7 @@ img {
   }
   
   .slided {
-    min-width: 100%; /* Cada slide deve ocupar toda a largura do contêiner */
+    min-width: 100%;
     box-sizing: border-box;
   }
   
@@ -202,7 +216,7 @@ img {
     }
 
     .slider {
-        max-width: 100%; /* O carrossel agora será fluido em dispositivos móveis */
+        max-width: 100%; 
       }
     
       .slided img {
