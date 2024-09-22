@@ -1,0 +1,144 @@
+.game-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+ h1.grame-containe {
+    font-size: 2.5rem;
+    color: #e6e6e6;
+    margin-bottom: 20px;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 150px); 
+    grid-gap: 25px; 
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .card {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .card img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .flipped .front {
+    display: block;
+  }
+  
+  .flipped .back {
+    display: none;
+  }
+  
+  .stats {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+ button.botao-jogo{
+    padding: 10px 30px;
+    background: linear-gradient(to left, #3e9fff 50%, #002c9c 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+button:hover.botao-jogo {
+    background-color: #2ec4ff;
+  }
+  
+  h2.stats {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  /* Tela de vitória */
+  #victory-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+  
+  #victory-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #victory-screen p {
+    font-size: 1.2rem;
+  }
+  
+  #victory-screen button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #victory-screen button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .cards-grid {
+      grid-template-columns: repeat(2, 140px); 
+      grid-gap: 15px;
+    }
+  
+    .card {
+      width: 140px;
+      height: 180px;
+    }
+  
+    .card img {
+      width: 140px;
+      height: 180px;
+    }
+  
+    h1.game-container {
+      font-size: 2rem;
+    }
+  
+    button.botao-jogo {
+      padding: 8px 25px;
+      font-size: 0.9rem;
+    }
+  }

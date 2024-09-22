@@ -331,10 +331,10 @@ function Home() {
         </div>
       </section>
 
-        <section className="jogo rolagem">
+        <section className="jogo-home rolagem">
         <h2>ÁREA GAMIFICADA</h2>
         <div className="container-imgjogo">
-          <a href=".//pages/jogo.html"><img className="imgjogo" width="300" height="400" src=".//src/assets/fotojogo.png" alt="jogo"/>
+          <a href="Jogo"><img className="imgjogo" width="300" height="400" src=".//src/assets/fotojogo.png" alt="jogo"/>
           </a>
         </div>
       </section>

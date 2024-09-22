@@ -1,0 +1,216 @@
+img {
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    border-radius: 5px;
+  }
+  
+  .store {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2149d9;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #2149d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filters button:hover {
+    background-color: #0c009a;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #2149d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0c009a;
+  }
+  
+  #coupon {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .discount-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%; /* Certifique-se que o slider ocupe a largura total */
+    max-width: 800px; /* Limite máximo para desktop */
+    margin: 20px auto; /* Centralizar no meio */
+    overflow: hidden; /* Ocultar o excesso */
+    border-radius: 10px;
+  }
+  
+  .slider-bg {
+    width: 800px;
+    height: 400px;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease;
+  }
+  
+  .slided {
+    min-width: 100%; /* Cada slide deve ocupar toda a largura do contêiner */
+    box-sizing: border-box;
+  }
+  
+  .slided img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .manual-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .manual-btn:hover {
+    background-color: blue;
+  }
+  .navigation-auto {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .navigation-auto div {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+  }
+  
+  .navigation-auto div:hover {
+    background-color: blue;
+  }
+  
+  .autobtn1:hover, .autobtn2:hover, .autobtn3:hover {
+    background-color: blue;
+  }
+  
+  @media (max-width: 768px) {
+    .products-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  
+    .slider-bg {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .manual-btn {
+      margin: 0 5px;
+    }
+  
+    .navigation-auto div {
+      margin-right: 5px;
+    }
+
+    .slider {
+        max-width: 100%; /* O carrossel agora será fluido em dispositivos móveis */
+      }
+    
+      .slided img {
+        height: auto;
+      }
+    
+      .manual-btn {
+        margin: 0 3px;
+      }
+  }
+  
