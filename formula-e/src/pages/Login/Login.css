@@ -1,0 +1,102 @@
+.rolagem {
+    display: flex;
+    /* Habilita o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100vh;
+    /* Ocupa toda a altura da tela */
+    background-color: #f0f0f0;
+    /* Cor de fundo opcional */
+}
+
+.container {
+    max-width: 400px;
+    /* Limita a largura do container */
+    width: 100%;
+    /* Permite que o container use toda a largura disponível */
+    padding: 20px;
+    /* Adiciona preenchimento */
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* .card { */
+/* Adicione suas propriedades de estilo aqui */
+/* padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+} */
+
+.label-float {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.label-float label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 12px;
+    color: #007bff;
+    /* Cor ao focar no campo */
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    /* Cor do botão */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Cor ao passar o mouse */
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
