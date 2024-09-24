@@ -31,7 +31,8 @@ const router = createBrowserRouter([
       { path: 'Live', element: <Live /> },
       { path: 'Contato', element: <Contato /> },
       { path: 'Login', element: <Login /> },
-      { path: 'SaibaMais', element: <SaibaMais /> }
+      { path: 'SaibaMais', element: <SaibaMais /> },
+      // { path: "*" , element: <NotFound />} 
     ]
   }
 
