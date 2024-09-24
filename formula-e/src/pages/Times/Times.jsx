@@ -112,13 +112,13 @@ const TeamCard = ({ team }) => (
       </li>
       <li>
         <p>Corridas<br />{team.races}</p>
-        <p>
-          <div className="saiba-mais">
-            <a href={team.link}>
-              <button>Saiba Mais</button>
-            </a>
-          </div>
-        </p>
+
+        <div className="saiba-mais">
+          <a href={team.link}>
+            <button>Saiba Mais</button>
+          </a>
+        </div>
+
       </li>
     </ul>
   </div>
