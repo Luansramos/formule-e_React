@@ -34,22 +34,22 @@ function Footer() {
                     <nav>
                         <ul>
                             <li>
-                                <a href="..//pages/corridas.html">CORRIDAS</a>
+                                <a href="Corridas">CORRIDAS</a>
                             </li>
                             <li>
-                                <a href="..//pages/noticias.html">NOTÍCIAS</a>
+                                <a href="Noticias">NOTÍCIAS</a>
                             </li>
                             <li>
-                                <a href="..//pages/jogo.html">JOGO</a>
+                                <a href="Jogo">JOGO</a>
                             </li>
                             <li>
-                                <a href="..//pages/loja.html">LOJA</a>
+                                <a href="Loja">LOJA</a>
                             </li>
                             <li>
-                                <a href="..//pages/aovivo.html">AO VIVO</a>
+                                <a href="Live">AO VIVO</a>
                             </li>
                             <li>
-                                <a href="..//pages/login.html">LOGIN</a>
+                                <a href="Login">LOGIN</a>
                             </li>
                         </ul>
                     </nav>

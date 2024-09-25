@@ -33,8 +33,6 @@ function Header () {
             <div className="nav-menu-mobile">
                 <button onClick={toggleMenu}>☰</button>
 
-{/*     ------------->>>>BOTEI ESSE MENU DENTRO DE UMA LISTA, PERGUNTAR PRO METHEUS SE PRECISA TIRAR<<<<-------------- */}
-
                 <ul id="nav-menu-mobile-content" className="nav-menu-mobile-content">
                     <li><Link to ="/">HOME</Link></li>
                     <li><Link to ="/Times">TIMES</Link></li>

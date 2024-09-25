@@ -66,38 +66,6 @@ footer {
 
 /* Responsividade para tablets e celulares */
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-    }
-
-    .nav-menu-mobile {
-        display: flex;
-    }
-
-    .container-imagem {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagem1,
-    .imagem2 {
-        width: 100%;
-    }
-
-    .calendario-container {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .calendario-list img,
-    .pistas-list img {
-        width: 100px;
-    }
-
-    .containaer-principais-noticias {
-        grid-template-columns: 1fr;
-    }
-
     .footer {
         flex-direction: column;
         text-align: center;
@@ -109,64 +77,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .nav-menu {
-        display: none;
-    }
-
-    .nav-menu-mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu-mobile button {
-        font-size: 24px;
-        background: transparent;
-        border: none;
-    }
-
-    .nav-menu-mobile-content {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .nav-menu-mobile-content.active {
-        display: flex;
-    }
-
-    .nav-menu-mobile button {
-        font-size: 18px;
-    }
-
-    .nav-menu-mobile-content a {
-        font-size: 16px;
-    }
-
-    .saiba button {
-        width: 120px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    .containaer-principais-noticias img {
-        width: 100%;
-    }
-
-    .podio {
-        flex-direction: column;
-    }
-
-    .colocado img {
-        width: 100px;
-    }
-
-    .header-text {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-
     .footer {
         flex-direction: column;
         text-align: center;
@@ -175,28 +85,5 @@ footer {
 
     .footer-informacoes {
         display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .podio {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .colocado {
-        order: 1;
-    }
-
-    .primeiro {
-        order: 2;
-    }
-
-    .segundo {
-        order: 1;
-    }
-
-    .terceiro {
-        order: 3;
     }
 }
