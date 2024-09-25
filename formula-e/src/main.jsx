@@ -13,6 +13,7 @@ import Login from './pages/Login/Login.jsx'
 import Loja from './pages/Loja/Loja.jsx'
 import Noticias from './pages/Noticias/Noticias.jsx'
 import Times from './pages/Times/Times.jsx'
+import PageNotFound from './pages/PageNotFoud/PageNotFoud.jsx'
 
 
 
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
       { path: 'Contato', element: <Contato /> },
       { path: 'Login', element: <Login /> },
       { path: 'SaibaMais', element: <SaibaMais /> },
-      // { path: "*" , element: <NotFound />} 
+      { path: '*', element: <PageNotFound/>}
+
     ]
   }
 

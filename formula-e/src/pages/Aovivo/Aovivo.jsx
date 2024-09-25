@@ -26,6 +26,7 @@ function Live(){
         
     <main className="rolagem">
       <div className="container">
+        <div className="top">
         <h1 className="h1">Transmissão Ao Vivo</h1>
         <div id="live-stream" className="live-stream">
           <iframe 
@@ -39,6 +40,7 @@ function Live(){
           ></iframe>
         </div>
         <h2 className="h2">Outras Corridas/Outros Vídeos</h2>
+        </div>
         <div id="videos" className="video-list">
           <div className="video">
             <iframe 

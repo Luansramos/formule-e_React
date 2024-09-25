@@ -1,9 +1,23 @@
 import React, { useEffect } from "react";
-import './Times.css'; // Crie ou ajuste o arquivo de estilo correspondente
+import './Times.css'; 
+import abtCupra from '../../assets/abt-cupra.png';
+import andreti from '../../assets/andreti.png';
+import dspenske from '../../assets/DSPENSKE.png';
+import envision from '../../assets/envision.png';
+import ert from '../../assets/ert.png';
+import jaguar from '../../assets/jaguar.png';
+import mahindra from '../../assets/mahindracar.png';
+import maserati from '../../assets/maserati.png';
+import neon from '../../assets/neon.png';
+import nissan from '../../assets/nissan.png';
+import porsche from '../../assets/porsche.png';
+
+
+
 
 const teamsData = [
   {
-    imgSrc: "../img/abt-cupra.png",
+    imgSrc: abtCupra,
     name: "ABT CUPRA FORMULA E TEAM",
     victories: 14,
     podiums: 47,
@@ -11,7 +25,7 @@ const teamsData = [
     link: "../pages/abt.html",
   },
   {
-    imgSrc: "../img/andreti.png",
+    imgSrc: andreti,
     name: "ANDRETTI FORMULA E",
     victories: 11,
     podiums: 36,
@@ -19,7 +33,7 @@ const teamsData = [
     link: "../pages/andreti.html",
   },
   {
-    imgSrc: "../img/DS PENSKE.png",
+    imgSrc: dspenske,
     name: "DS PENSKE",
     victories: 3,
     podiums: 16,
@@ -27,7 +41,7 @@ const teamsData = [
     link: "../pages/ds.html",
   },
   {
-    imgSrc: "../img/envision.png",
+    imgSrc: envision,
     name: "ENVISION RACING",
     victories: 16,
     podiums: 50,
@@ -35,7 +49,7 @@ const teamsData = [
     link: "../pages/envision.html",
   },
   {
-    imgSrc: "../img/ert.png",
+    imgSrc: ert,
     name: "ERT FORMULA E TEAM",
     victories: 2,
     podiums: 6,
@@ -43,7 +57,7 @@ const teamsData = [
     link: "../pages/ert.html",
   },
   {
-    imgSrc: "../img/jaguar.png",
+    imgSrc: jaguar,
     name: "JAGUAR TCS RACING",
     victories: 15,
     podiums: 41,
@@ -51,7 +65,7 @@ const teamsData = [
     link: "../pages/jaguar.html",
   },
   {
-    imgSrc: "../img/mahindracar.png",
+    imgSrc: mahindra,
     name: "MAHINDRA RACING",
     victories: 5,
     podiums: 24,
@@ -59,7 +73,7 @@ const teamsData = [
     link: "../pages/mahindra.html",
   },
   {
-    imgSrc: "../img/maserati.png",
+    imgSrc: maserati,
     name: "MASERATI MSG RACING",
     victories: 10,
     podiums: 27,
@@ -67,7 +81,7 @@ const teamsData = [
     link: "../pages/maserati.html",
   },
   {
-    imgSrc: "../img/neon.png",
+    imgSrc: neon,
     name: "NEOM MCLAREN FORMULA E TEAM",
     victories: 8,
     podiums: 25,
@@ -75,7 +89,7 @@ const teamsData = [
     link: "../pages/mclaren.html",
   },
   {
-    imgSrc: "../img/nissan.png",
+    imgSrc: nissan,
     name: "NISSAN FORMULA E TEAM",
     victories: 18,
     podiums: 46,
@@ -83,7 +97,7 @@ const teamsData = [
     link: "../pages/nissan.html",
   },
   {
-    imgSrc: "../img/porsche.png",
+    imgSrc: porsche,
     name: "TAG HEUER PORSCHE FORMULA E TEAM",
     victories: 8,
     podiums: 16,
