@@ -107,7 +107,7 @@ const teamsData = [
 ];
 
 const TeamCard = ({ team }) => (
-  <div className="card">
+  <div className="card-times">
     <div className="content">
       <div className="imgBx">
         <img src={team.imgSrc} alt={team.name} />
@@ -126,13 +126,6 @@ const TeamCard = ({ team }) => (
       </li>
       <li>
         <p>Corridas<br />{team.races}</p>
-
-        <div className="saiba-mais">
-          <a href={team.link}>
-            <button>Saiba Mais</button>
-          </a>
-        </div>
-
       </li>
     </ul>
   </div>
@@ -164,7 +157,7 @@ function Teams() {
   return (
     <main className="rolagem">
       <section className="container-times">
-        <div className="container">
+        <div className="sub-container">
           {teamsData.map((team, index) => (
             <TeamCard key={index} team={team} />
           ))}

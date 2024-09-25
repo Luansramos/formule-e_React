@@ -34,8 +34,8 @@ function Login() {
                 <div className="coluna2"></div>
                 <div className="conteudo">
                     <main className="rolagem">
-                        <div className="container">
-                            <div className="card">
+                        <div className="container-login">
+                            <div className="card-login">
                                 <h1>Entrar</h1>
 
                                 <div id="msgError"></div>
