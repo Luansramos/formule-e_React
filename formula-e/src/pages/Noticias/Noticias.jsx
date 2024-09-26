@@ -1,4 +1,4 @@
-import "./noticias.css"
+import "./Noticias.css"
 import React, { useEffect } from "react";
 
 function Noticias() {
