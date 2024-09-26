@@ -14,6 +14,8 @@ import Loja from './pages/Loja/Loja.jsx'
 import Noticias from './pages/Noticias/Noticias.jsx'
 import Times from './pages/Times/Times.jsx'
 import PageNotFound from './pages/PageNotFoud/PageNotFoud.jsx'
+import Cadastro from './pages/Cadastro/Cadastro.jsx'
+
 
 
 
@@ -33,7 +35,8 @@ const router = createBrowserRouter([
       { path: 'Contato', element: <Contato /> },
       { path: 'Login', element: <Login /> },
       { path: 'SaibaMais', element: <SaibaMais /> },
-      { path: '*', element: <PageNotFound/>}
+      { path: '*', element: <PageNotFound/>},
+      { path: 'cadastro', element: <Cadastro/>},
 
     ]
   }

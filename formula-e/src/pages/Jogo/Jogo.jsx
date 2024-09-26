@@ -88,35 +88,39 @@ function MemoryGame() {
   };
 
   return (
-    <div className="game-container">
-      <h1>Jogo da Memória - Fórmula E</h1>
-      <div className="stats">
-        <h2>Movimentos: {movements}</h2>
-        <button className='botao-jogo' onClick={resetGame}>Reiniciar Jogo</button>
+
+
+    
+      <div className="game-container">
+        <h1>Jogo da Memória - Fórmula E</h1>
+        <div className="stats">
+          <h2>Movimentos: {movements}</h2>
+          <button className='botao-jogo' onClick={resetGame}>Reiniciar Jogo</button>
+        </div>
+        <div className="cards-grid">
+          {cards.map((card) => (
+            <div
+              key={card.id}
+              className={`card ${card.flipped ? 'flipped' : ''}`}
+              onClick={() => handleClick(card)}
+            >
+              <img
+                className="front"
+                src={card.front}
+                alt="card front"
+                style={{ display: card.flipped ? 'block' : 'none' }}
+              />
+              <img
+                className="back"
+                src="./src/assets/logo.png"
+                alt="card back"
+                style={{ display: card.flipped ? 'none' : 'block' }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="cards-grid">
-        {cards.map((card) => (
-          <div
-            key={card.id}
-            className={`card ${card.flipped ? 'flipped' : ''}`}
-            onClick={() => handleClick(card)}
-          >
-            <img
-              className="front"
-              src={card.front}
-              alt="card front"
-              style={{ display: card.flipped ? 'block' : 'none' }}
-            />
-            <img
-              className="back"
-              src="./src/assets/logo.png"
-              alt="card back"
-              style={{ display: card.flipped ? 'none' : 'block' }}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
+
   );
 }
 
