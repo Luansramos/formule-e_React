@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './Times.css'; 
+import './times.css'; 
 import abtCupra from '../../assets/abt-cupra.png';
 import andreti from '../../assets/andreti.png';
 import dspenske from '../../assets/DSPENSKE.png';
