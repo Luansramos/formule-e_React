@@ -3,18 +3,18 @@ import './MemoryGame.css'; // Arquivo CSS para estilos
 
 // Dados das cartas
 const cardsData = [
-  { id: 1, name: 'jake', front: './src/assets/pilotos/jake-mclaren.png' },
-  { id: 2, name: 'jake', front: './src/assets/McLaren_Racing_logo.png' },
-  { id: 3, name: 'pascal', front: './src/assets/pilotos/pascal-porsche.png' },
-  { id: 4, name: 'pascal', front: './src/assets/porschelogo.png' },
-  { id: 5, name: 'oliver', front: './src/assets/oliver.png' },
-  { id: 6, name: 'oliver', front: './src/assets/nissan-logo.png' },
-  { id: 7, name: 'lucas', front: './src/assets/pilotos/lucas-abt.png' },
-  { id: 8, name: 'lucas', front: './src/assets/abtlogo.png' },
-  { id: 9, name: 'stoffel', front: './src/assets/pilotos/stoffel-ds.png' },
-  { id: 10, name: 'stoffel', front: './src/assets/dslogo.png' },
-  { id: 11, name: 'edoardo', front: './src/assets/pilotos/edoardo-mahindra.png' },
-  { id: 12, name: 'edoardo', front: './src/assets/mahindralogo.png' }
+  { id: 1, name: 'jake', front: '../../assets/pilotos/jake-mclaren.png' },
+  { id: 2, name: 'jake', front: '../../assets/McLaren_Racing_logo.png' },
+  { id: 3, name: 'pascal', front: '../../assets/pilotos/pascal-porsche.png' },
+  { id: 4, name: 'pascal', front: '../../assets/porschelogo.png' },
+  { id: 5, name: 'oliver', front: '../../assets/oliver.png' },
+  { id: 6, name: 'oliver', front: '../../assets/nissan-logo.png' },
+  { id: 7, name: 'lucas', front: '../../assets/pilotos/lucas-abt.png' },
+  { id: 8, name: 'lucas', front: '../../assets/abtlogo.png' },
+  { id: 9, name: 'stoffel', front: '../../assets/pilotos/stoffel-ds.png' },
+  { id: 10, name: 'stoffel', front: '../../assets/dslogo.png' },
+  { id: 11, name: 'edoardo', front: '../../assets/pilotos/edoardo-mahindra.png' },
+  { id: 12, name: 'edoardo', front: '../../assets/mahindralogo.png' }
 ];
 
 function MemoryGame() {
