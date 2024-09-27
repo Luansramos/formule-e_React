@@ -1,9 +1,15 @@
 import "./Noticias.css"
 import React, { useEffect } from "react";
 
+// Importação das imagens
+import perfumeImage from "../../assets/Not.perfume.webp";
+import circuitoImage from "../../assets/Not.Cirquito.webp";
+import herancaBrImage from "../../assets/Not.herança-Br.webp";
+import dacostaImage from "../../assets/Not.dacostadefende.jpg";
+import lucasImage from "../../assets/Not.lucas-volta.jpeg";
+
 function Noticias() {
     useEffect(() => {
-  
         const myObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -13,19 +19,16 @@ function Noticias() {
                 }
             });
         });
-    
-      
+
         const elements = document.querySelectorAll(".rolagem");
         elements.forEach((element) => myObserver.observe(element));
-    
+
         return () => {
             elements.forEach((element) => myObserver.unobserve(element));
         };
-    }, []); 
-    
+    }, []);
 
     return (
-
         <div className="noticia-1 rolagem">
             <div className="center">
                 <div className="noticias-wraper-1">
@@ -33,7 +36,7 @@ function Noticias() {
                         <a href="#!">
                             <div
                                 className="noticia-destaque-single"
-                                style={{ backgroundImage: 'url(../../assets/Not.perfume.webp)' }} // Adicione a URL correta da imagem aqui.
+                                style={{ backgroundImage: `url(${perfumeImage})` }} // Uso da imagem importada
                             >
                                 <h3>PERFUME COM CHEIRO DE PNEU?</h3>
                             </div>
@@ -43,7 +46,7 @@ function Noticias() {
                     <div className="outras-noticias-1">
                         <div
                             className="outras-noticias-1-single"
-                            style={{ backgroundImage: 'url(../../assets/Not.Cirquito.webp)' }} // Adicione a URL correta da imagem aqui.
+                            style={{ backgroundImage: `url(${circuitoImage})` }} // Uso da imagem importada
                         >
                             <a href="#!">
                                 <h3>Criação de Circuito</h3>
@@ -52,7 +55,7 @@ function Noticias() {
 
                         <div
                             className="outras-noticias-1-single"
-                            style={{ backgroundImage: 'url(../../assets/Not.herança-Br.webp)' }} // Adicione a URL correta da imagem aqui.
+                            style={{ backgroundImage: `url(${herancaBrImage})` }} // Uso da imagem importada
                         >
                             <a href="#!">
                                 <h3>Herança Brasileira no Automobilismo</h3>
@@ -61,7 +64,7 @@ function Noticias() {
 
                         <div
                             className="outras-noticias-1-single"
-                            style={{ backgroundImage: 'url(../../assets/Not.dacostadefende.jpg)' }} // Adicione a URL correta da imagem aqui.
+                            style={{ backgroundImage: `url(${dacostaImage})` }} // Uso da imagem importada
                         >
                             <a href="#!">
                                 <h3>Da Costa Defende Título</h3>
@@ -70,7 +73,7 @@ function Noticias() {
 
                         <div
                             className="outras-noticias-1-single"
-                            style={{ backgroundImage: 'url(../../assets/Not.lucas-volta.jpeg)' }} // Adicione a URL correta da imagem aqui.
+                            style={{ backgroundImage: `url(${lucasImage})` }} // Uso da imagem importada
                         >
                             <a href="#!">
                                 <h3>Lucas di Grassi Volta à China</h3>
@@ -81,6 +84,6 @@ function Noticias() {
             </div>
         </div>
     );
-};
+}
 
 export default Noticias;
