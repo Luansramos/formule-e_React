@@ -1,32 +1,53 @@
 import { useEffect, useState } from 'react';
 import './Loja.css';
+import sliderimg1 from '../../assets/sliderimg1.png';
+import sliderimg2 from '../../assets/sliderimg2.png';
+import sliderimg3 from '../../assets/sliderimg3.png';
+import poloporsche from '../../assets/produtosloja/poloporsche.png';
+import polomclaren from '../../assets/produtosloja/polomclaren.png';
+import teijinshirt from '../../assets/produtosloja/teijinshirt.png';
+import bonemahindra from '../../assets/produtosloja/bonemahindra.jpg';
+import boneandretti from '../../assets/produtosloja/boneandretti.png';
+import bonejaguar from '../../assets/produtosloja/bonejaguar.png';
+import boneporsche from '../../assets/produtosloja/boneporsche.png';
+import nissanshirt from '../../assets/produtosloja/nissanshirt.png';
+import bonemclaren from '../../assets/produtosloja/bonemclaren.png';
+import maseratishirt from '../../assets/produtosloja/maseratishirt.png';
+import maseraticap from '../../assets/produtosloja/maseraticap.png';
+import jaguarshirt from '../../assets/produtosloja/jaguarshirt.png';
+import envisioncap from '../../assets/produtosloja/envisioncap.png';
+import niopolo from '../../assets/produtosloja/niopolo.png';
+import penskeshirt from '../../assets/produtosloja/penskeshirt.png';
+import penskecap from '../../assets/produtosloja/penskecap.png';
+import niojaqueta from '../../assets/produtosloja/niojaqueta.png';
 
 // Dados do carrossel
 const sliderImages = [
-  { id: 1, src: '../../assets/sliderimg1.png', alt: 'Imagem indicando cupom Mahindra10' },
-  { id: 2, src: '../../assets/sliderimg2.png', alt: 'Imagem com produtos da Mahindra' },
-  { id: 3, src: '../../assets/sliderimg3.png', alt: 'Imagem com produtos da Fórmula E' }
+  { id: 1, src: sliderimg1, alt: 'Imagem indicando cupom Mahindra10' },
+  { id: 2, src: sliderimg2, alt: 'Imagem com produtos da Mahindra' },
+  { id: 3, src: sliderimg3, alt: 'Imagem com produtos da Fórmula E' }
 ];
 
 const initialProducts = [
-  { id: 1, name: 'Porsche Motorsport Polo', price: 150, category: 'Polo', image: '../../assets/produtosloja/poloporsche.png' },
-  { id: 2, name: 'Neom McLaren Polo', price: 150, category: 'Polo', image: '../../assets/produtosloja/polomclaren.png' },
-  { id: 3, name: 'Envision Racing T-Shirt', price: 150, category: 'Camiseta', image: '../../assets/produtosloja/teijinshirt.png' },
-  { id: 4, name: 'Mahindra Racing Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/bonemahindra.jpg' },
-  { id: 5, name: 'Andretti Racing Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/boneandretti.png' },
-  { id: 6, name: 'Jaguar TCS Racing Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/bonejaguar.png' },
-  { id: 7, name: 'Porsche Motorsport Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/boneporsche.png' },
-  { id: 8, name: 'Nissan', price: 150, category: 'Camiseta', image: '../../assets/produtosloja/nissanshirt.png' },
-  { id: 9, name: 'Neom McLaren Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/bonemclaren.png' },
-  { id: 10, name: 'Maserati Formula T-Shirt', price: 150, category: 'Camiseta', image: '../../assets/produtosloja/maseratishirt.png' },
-  { id: 11, name: 'Maserati Formula Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/maseraticap.png' },
-  { id: 12, name: 'Jaguar TCS Racing T-Shirt', price: 150, category: 'Camiseta', image: '../../assets/produtosloja/jaguarshirt.png' },
-  { id: 13, name: 'Envision Racing Cap', price: 100, category: 'Boné', image: '../../assets/produtosloja/envisioncap.png' },
-  { id: 14, name: 'NIO 333 Polo', price: 150, category: 'Polo', image: '../../assets/produtosloja/niopolo.png' },
-  { id: 15, name: 'DS Penske T-Shirt', price: 150, category: 'Camiseta', image: '../../assets/produtosloja/penskeshirt.png' },
-  { id: 16, name: 'DS Penske Bone', price: 100, category: 'Boné', image: '../../assets/produtosloja/penskecap.png' },
-  { id: 17, name: 'NIO 333 Jaqueta', price: 150, category: 'Camiseta', image: '../../assets/produtosloja/niojaqueta.png' }
+  { id: 1, name: 'Porsche Motorsport Polo', price: 150, category: 'Polo', image: poloporsche },
+  { id: 2, name: 'Neom McLaren Polo', price: 150, category: 'Polo', image: polomclaren },
+  { id: 3, name: 'Envision Racing T-Shirt', price: 150, category: 'Camiseta', image: teijinshirt },
+  { id: 4, name: 'Mahindra Racing Cap', price: 100, category: 'Boné', image: bonemahindra },
+  { id: 5, name: 'Andretti Racing Cap', price: 100, category: 'Boné', image: boneandretti },
+  { id: 6, name: 'Jaguar TCS Racing Cap', price: 100, category: 'Boné', image: bonejaguar },
+  { id: 7, name: 'Porsche Motorsport Cap', price: 100, category: 'Boné', image: boneporsche },
+  { id: 8, name: 'Nissan', price: 150, category: 'Camiseta', image: nissanshirt },
+  { id: 9, name: 'Neom McLaren Cap', price: 100, category: 'Boné', image: bonemclaren },
+  { id: 10, name: 'Maserati Formula T-Shirt', price: 150, category: 'Camiseta', image: maseratishirt },
+  { id: 11, name: 'Maserati Formula Cap', price: 100, category: 'Boné', image: maseraticap },
+  { id: 12, name: 'Jaguar TCS Racing T-Shirt', price: 150, category: 'Camiseta', image: jaguarshirt },
+  { id: 13, name: 'Envision Racing Cap', price: 100, category: 'Boné', image: envisioncap },
+  { id: 14, name: 'NIO 333 Polo', price: 150, category: 'Polo', image: niopolo },
+  { id: 15, name: 'DS Penske T-Shirt', price: 150, category: 'Camiseta', image: penskeshirt },
+  { id: 16, name: 'DS Penske Bone', price: 100, category: 'Boné', image: penskecap },
+  { id: 17, name: 'NIO 333 Jaqueta', price: 150, category: 'Camiseta', image: niojaqueta }
 ];
+
 
 function Loja() {
   const [products, setProducts] = useState(initialProducts);
