@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./SaibaMais.css"
+import { Link } from 'react-router-dom';
 
 function PageSaibaMais(){
   useEffect(() => {
@@ -34,7 +35,7 @@ return(
     </section>
     <section className="calendario2"> 
       <h2>Calendário de Corridas e circuitos</h2>
-      <p>A fórmula E tem um calendário de corridas que acontecem em diferentes cidades ao redor do mundo. Você pode encontrar mais informações sobre o nosso calendário atual na nossa página <a href="Corridas">CORRIDAS</a></p>
+      <p>A fórmula E tem um calendário de corridas que acontecem em diferentes cidades ao redor do mundo. Você pode encontrar mais informações sobre o nosso calendário atual na nossa página  <Link to="/Corridas">Corridas</Link></p>
     </section>
     <section className="tec">
       <h2>Tecnologia e Inovação</h2>
@@ -43,7 +44,7 @@ return(
     <section className="equipes">
       <h2>Participantes e Equipes</h2>
       <p>Confira abaixo as equipes participantes da Fórmula E:</p>
-      <a href="Times">TIMES</a>
+      <Link to="/Times">Times</Link>
       </section>
  </main>
   </>
